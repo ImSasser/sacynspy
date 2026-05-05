@@ -8266,30 +8266,30 @@ return function(shared, page)
     end
     
     local clipboard = shared.Clipboard
-    addButton("Copy code to clipboard", function()
+    addButton("Copiar código al portapapeles", function()
         clipboard(codeBox.Text)
     end)
-    addButton("Copy path to clipboard", function()
+    addButton("Copiar ruta al portapapeles", function()
         if selection[1] then
             clipboard(shared.ToString.ToString(selection[1]))
         end
     end)
-    addButton("Copy args to clipboard", function()
+    addButton("Copiar args al portapapeles", function()
         if selection[1] then
             clipboard(shared.ToString.ToString(selection[2]))
         end
     end)
-    addButton("Copy result to clipboard", function()
+    addButton("Copiar resultado al portapapeles", function()
         if selection[3] and selection[3][1] then
             clipboard(shared.ToString.ToString(selection[3][1]))
         end
     end)
-    addButton("Copy caller to clipboard", function()
+    addButton("Copiar llamador al portapapeles", function()
         if selection[4] then
             clipboard(shared.ToString.ToString(selection[4]))
         end
     end)
-    addButton("Run code", function()
+    addButton("Ejecutar código", function()
         if selection[1] then
             if selection[1]:IsA("BindableFunction") then
                 selection[1]:Invoke(unpack(selection[2]))
@@ -8299,18 +8299,18 @@ return function(shared, page)
         end
     end)
 
-    addButton("Block remote [Object]", function()
+    addButton("Bloquear remote [Objeto]", function()
         if selection[1] then
             block[selection[1]] = true
         end
     end)
-    addButton("Block remote [Name]", function()
+    addButton("Bloquear remote [Nombre]", function()
         if selection[1] then
             block[selection[1].Name] = true
         end
     end)
     
-    addButton("Clear logs", function()
+    addButton("Limpiar logs", function()
         for _, log in logs do
             log:Destroy()
         end
@@ -8318,25 +8318,25 @@ return function(shared, page)
         table.clear(logs)
     end)
 
-    addButton("Ignore remote [Object]", function()
+    addButton("Ignorar remote [Objeto]", function()
         if selection[1] then
             ignore[selection[1]] = true
         end
     end)
-    addButton("Ignore remote [Name]", function()
+    addButton("Ignorar remote [Nombre]", function()
         if selection[1] then
             ignore[selection[1].Name] = true
         end
     end)
 
-    addButton("Decompile", function()
+    addButton("Descompilar", function()
         if selection[4] then
             codeBox.Text = "local script = " .. shared.ToString.ToString(selection[4]) .. "\n" .. getfenv().decompile(selection[4])
         end
     end)
     
     local hooking = shared:AddObject({ false })
-    addButton("Hook args [Object]", function(button)
+    addButton("Hook args [Objeto]", function(button)
         if hooking[1] and hooking[1] ~= button.Name then return end
 
         if not hooking[1] and selection[1] then
@@ -8369,7 +8369,7 @@ return function(shared, page)
         end
     end)
     
-    addButton("Hook args [Name]", function(button)
+    addButton("Hook args [Nombre]", function(button)
         if hooking[1] and hooking[1] ~= button.Name then return end
         
         if not hooking[1] and selection[1] then
@@ -11672,7 +11672,7 @@ return function(shared, page)
         end
     end)
 
-    addButton("Clear logs", function()
+    addButton("Limpiar logs", function()
         for _, log in logs do
             log:Destroy()
         end
@@ -12097,30 +12097,30 @@ return function(shared, page)
     end
     
     local clipboard = shared.Clipboard
-    addButton("Copy code to clipboard", function()
+    addButton("Copiar código al portapapeles", function()
         clipboard(codeBox.Text)
     end)
-    addButton("Copy path to clipboard", function()
+    addButton("Copiar ruta al portapapeles", function()
         if selection[1] then
             clipboard(shared.ToString.ToString(selection[1]))
         end
     end)
-    addButton("Copy args to clipboard", function()
+    addButton("Copiar args al portapapeles", function()
         if selection[1] then
             clipboard(shared.ToString.ToString(selection[3]))
         end
     end)
-    addButton("Copy result to clipboard", function()
+    addButton("Copiar resultado al portapapeles", function()
         if selection[4] and selection[4][1] then
             clipboard(shared.ToString.ToString(selection[4][1]))
         end
     end)
-    addButton("Copy caller to clipboard", function()
+    addButton("Copiar llamador al portapapeles", function()
         if selection[5] then
             clipboard(shared.ToString.ToString(selection[5]))
         end
     end)
-    addButton("Run code", function()
+    addButton("Ejecutar código", function()
         if selection[1] then
             if not selection[2] then
                 if selection[1]:IsA("RemoteFunction") then
@@ -12138,18 +12138,18 @@ return function(shared, page)
         end
     end)
 
-    addButton("Block remote [Object]", function()
+    addButton("Bloquear remote [Objeto]", function()
         if selection[1] then
             block[selection[1]] = true
         end
     end)
-    addButton("Block remote [Name]", function()
+    addButton("Bloquear remote [Nombre]", function()
         if selection[1] then
             block[selection[1].Name] = true
         end
     end)
     
-    addButton("Clear logs", function()
+    addButton("Limpiar logs", function()
         for _, log in logs.From do
             log:Destroy()
         end
@@ -12162,25 +12162,25 @@ return function(shared, page)
         table.clear(logs.To)
     end)
 
-    addButton("Ignore remote [Object]", function()
+    addButton("Ignorar remote [Objeto]", function()
         if selection[1] then
             ignore[selection[1]] = true
         end
     end)
-    addButton("Ignore remote [Name]", function()
+    addButton("Ignorar remote [Nombre]", function()
         if selection[1] then
             ignore[selection[1].Name] = true
         end
     end)
 
-    addButton("Decompile", function()
+    addButton("Descompilar", function()
         if selection[5] then
             codeBox.Text = "local script = " .. shared.ToString.ToString(selection[5]) .. "\n" .. getfenv().decompile(selection[5])
         end
     end)
     
     local hooking = shared:AddObject({ false })
-    addButton("Hook args [Object]", function(button)
+    addButton("Hook args [Objeto]", function(button)
         if hooking[1] and hooking[1] ~= button.Name then return end
 
         if not hooking[1] and selection[1] then
@@ -12213,7 +12213,7 @@ return function(shared, page)
         end
     end)
     
-    addButton("Hook args [Name]", function(button)
+    addButton("Hook args [Nombre]", function(button)
         if hooking[1] and hooking[1] ~= button.Name then return end
         
         if not hooking[1] and selection[1] then
