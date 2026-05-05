@@ -12776,11 +12776,6 @@ end)
 
 local uis = game:GetService("UserInputService")
 
-if uis.TouchEnabled and not uis.KeyboardEnabled then
-    script.Parent.Size = UDim2.fromScale(0.65, 0.65)
-    script.Parent.Main.TopbarZone.Buttons.Minimize.Visible = false
-end
-
 local oldRatio = script.Parent.UIAspectRatioConstraint.AspectRatio
 local oldSize = script.Parent.Size
 
