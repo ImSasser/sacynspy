@@ -12819,7 +12819,22 @@ local bubbleButton = nil
 
 local function createBubble()
     if bubbleButton then return end
-    local parent = script:FindFirstAncestorOfClass("ScreenGui") or game:GetService("CoreGui")
+
+    local parent = nil
+    local current = script
+    while current do
+        if current:IsA("ScreenGui") or current:IsA("CoreGui") then
+            parent = current
+            break
+        end
+        current = current.Parent
+    end
+    if not parent then
+        parent = script.Parent and script.Parent.Parent
+    end
+    if not parent then
+        parent = game:GetService("CoreGui")
+    end
     local bubble = Instance.new("TextButton")
     bubble.Name = "KetamineBubble"
     bubble.Size = UDim2.fromOffset(58, 58)
