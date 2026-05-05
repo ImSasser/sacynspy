@@ -12788,6 +12788,7 @@ local isMinimized = true
 local cooldown = false
 
 local bubbleButton = nil
+local maximize = nil
 
 local function createBubble()
     if bubbleButton then return end
@@ -12920,7 +12921,7 @@ cons[#cons + 1] = settings.Event:Connect(function(setting, value)
     end
 end)
 
-local function maximize()
+function maximize()
     if cooldown or not isMinimized then return end
 
     isMinimized = false
