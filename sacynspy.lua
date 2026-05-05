@@ -1,7 +1,12 @@
+-- [[ GENERATED WITH InfernoHub/Scriptify STUDIO PLUGIN ]] --
+-- Scriptify Version: 1.0
+
+--
+
 -- Create objects
 local parent = nil;
 local objects = {
-    ["Instance0"] = Instance.new("ScreenGui"); -- Sacyn Spy
+    ["Instance0"] = Instance.new("ScreenGui"); -- Ketamine
     ["Instance1"] = Instance.new("TextButton"); -- Window
     ["Instance2"] = Instance.new("LocalScript"); -- UIControl
     ["Instance3"] = Instance.new("ModuleScript"); -- Settings
@@ -312,7 +317,7 @@ do -- Set properties
     objects["Instance0"]["ClipToDeviceSafeArea"] = true;
     objects["Instance0"]["Parent"] = parent;
     objects["Instance0"]["IgnoreGuiInset"] = true;
-    objects["Instance0"]["Name"] = "Sacyn Spy";
+    objects["Instance0"]["Name"] = "Ketamine";
     objects["Instance0"]["DisplayOrder"] = 999999999;
 
     objects["Instance1"]["Visible"] = true;
@@ -594,7 +599,7 @@ do -- Set properties
     objects["Instance24"]["BackgroundColor3"] = Color3.new(1, 1, 1);
     objects["Instance24"]["TextColor3"] = Color3.new(1, 1, 1);
     objects["Instance24"]["BorderColor3"] = Color3.new(0, 0, 0);
-    objects["Instance24"]["Text"] = "Sacyn Spy";
+    objects["Instance24"]["Text"] = "Ketamine";
     objects["Instance24"]["LayoutOrder"] = 0;
     objects["Instance24"]["TextWrapped"] = true;
     objects["Instance24"]["Rotation"] = 0;
@@ -7939,8 +7944,8 @@ local modules do
     modules[objects["Instance8"]] = function()
         local script = objects["Instance8"];
 return {
-    { "1.0", "Sacyn Spy was released as CSpy (Cherry's Spy), having simple settings, remote & event spy." },
-    { "1.1", "CSpy been renamed to Sacyn Spy, added Script scanner & http spy." },
+    { "1.0", "Ketamine was released as CSpy (Cherry's Spy), having simple settings, remote & event spy." },
+    { "1.1", "CSpy been renamed to Ketamine, added Script scanner & http spy." },
     { "1.2", "Fixed lags who been caused by Script scanner & improved it's speed, added ability to hook arguments in remote & event spies." },
     { "1.3", "Added changelogs, fixed http spy error (not fatal) on bad executors, added memory scanner. <b>Now unavailable pages such as memory scanner not visible on unsupported executors.</b>" }
 }
@@ -7955,7 +7960,7 @@ return function(shared, page)
     local settings = shared.Settings
     
     local codeBox = shared.CodeBox(page.TextBox, shared.UseEnv)
-    codeBox.Text = "Welcome to Sacyn Spy - Event Spy!\n-- Waiting for Bindables --"
+    codeBox.Text = "Welcome to Ketamine - Event Spy!\n-- Waiting for Bindables --"
 
     local logExample = page.Logs.Log
     logExample.Parent = page
@@ -9102,20 +9107,20 @@ metatable = setmetatable({ }, {
                     end
                 end
 
-                task.spawn(getfenv().writefile, "Sacyn Spy/Settings.json", http:JSONEncode(saveFile))
+                task.spawn(getfenv().writefile, "Ketamine/Settings.json", http:JSONEncode(saveFile))
             end
         end
     end
 })
 
 if files then
-    getfenv().makefolder("Sacyn Spy")
+    getfenv().makefolder("Ketamine")
 
     table.insert(settings, 1, {"Auto_load_settings", false, function(state)
-        task.spawn(getfenv().writefile, "Sacyn Spy/Settings.bool", state and "1" or "0")
+        task.spawn(getfenv().writefile, "Ketamine/Settings.bool", state and "1" or "0")
 
         if state then
-            local success, json = pcall(getfenv().readfile, "Sacyn Spy/Settings.json")
+            local success, json = pcall(getfenv().readfile, "Ketamine/Settings.json")
             if success then
                 for index, value in http:JSONDecode(json) do
                     if index ~= "Auto_load_settings" then
@@ -9128,7 +9133,7 @@ if files then
     
     table.insert(settings, 1, {"SEPARATOR", "Saves"})
     
-    local success, value = pcall(getfenv().readfile, "Sacyn Spy/Settings.bool")
+    local success, value = pcall(getfenv().readfile, "Ketamine/Settings.bool")
     if success then
         task.delay(5, function()
             metatable.Auto_load_settings = value == "1"
@@ -9142,7 +9147,7 @@ return metatable
     modules[objects["Instance4"]] = function()
         local script = objects["Instance4"];
 local global = typeof(getfenv().getgenv) == "function" and typeof(getfenv().getgenv()) == "table" and getfenv().getgenv() or _G -- I never made normal require in my plugin, so thats a reason why I made that
-local idx = "__Sacyn SpyShared"
+local idx = "__KetamineShared"
 
 if global[idx] then
     return global[idx]
@@ -11501,7 +11506,7 @@ return function(shared, page)
     local limit = 4
 
     local codeBox = shared.CodeBox(page.Contents.TextBox, shared.UseEnv)
-    codeBox.Text = "Welcome to Sacyn Spy - HTTP Spy!\n-- Waiting for HTTP requests --"
+    codeBox.Text = "Welcome to Ketamine - HTTP Spy!\n-- Waiting for HTTP requests --"
 
     local function addLog(realUrl, method, func, headers, body, result)
         realUrl = realUrl:gsub("\\", "/")
@@ -11705,7 +11710,7 @@ return function(shared, page)
     local settings = shared.Settings
     
     local codeBox = shared.CodeBox(page.Contents.To.TextBox, shared.UseEnv)
-    codeBox.Text = "Welcome to Sacyn Spy - Remote Spy!\n-- Waiting for Remotes --"
+    codeBox.Text = "Welcome to Ketamine - Remote Spy!\n-- Waiting for Remotes --"
 
     local logExample = page.Contents.To.Logs.Log
     logExample.Parent = page
@@ -12551,7 +12556,7 @@ end]]
                 end
             end
 
-            game:GetService("StarterGui"):SetCore("SendNotification", { Title = "Sacyn Spy", Text = "Unable to generate table\nDo it yourself :trolling:" })
+            game:GetService("StarterGui"):SetCore("SendNotification", { Title = "Ketamine", Text = "Unable to generate table\nDo it yourself :trolling:" })
         end
     end)
 
@@ -12567,7 +12572,7 @@ end]]
             end
         end
 
-        game:GetService("StarterGui"):SetCore("SendNotification", { Title = "Sacyn Spy", Text = "Parent table not found" })
+        game:GetService("StarterGui"):SetCore("SendNotification", { Title = "Ketamine", Text = "Parent table not found" })
     end)
 
     cons[#cons + 1] = page.Contents.SearchBar.Field.TextBox.FocusLost:Connect(function()
@@ -12771,74 +12776,131 @@ end)
 
 local uis = game:GetService("UserInputService")
 
+if uis.TouchEnabled and not uis.KeyboardEnabled then
+    script.Parent.Size = UDim2.fromScale(0.65, 0.65)
+    -- Minimize button now enabled on mobile
+end
+
 local oldRatio = script.Parent.UIAspectRatioConstraint.AspectRatio
 local oldSize = script.Parent.Size
 
-local isMinimized = false
-local isHidden = true
+local isMinimized = true
 local cooldown = false
 
-local trayIcon = Instance.new("ImageButton")
-trayIcon.Size = UDim2.fromOffset(40, 40)
-trayIcon.Position = UDim2.new(0, 10, 0, 10)
-trayIcon.AnchorPoint = Vector2.new(0, 0)
-trayIcon.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
-trayIcon.BorderSizePixel = 0
-trayIcon.Image = "rbxassetid://116368608257813"
-trayIcon.ImageColor3 = Color3.fromRGB(255, 255, 255)
-trayIcon.Visible = false
-trayIcon.ZIndex = 999999999
-trayIcon.Parent = script.Parent
-
-local trayCorner = Instance.new("UICorner")
-trayCorner.CornerRadius = UDim.new(1, 8)
-trayCorner.Parent = trayIcon
-
-local trayStroke = Instance.new("UIStroke")
-trayStroke.Color = Color3.fromRGB(60, 60, 60)
-trayStroke.Thickness = 1
-trayStroke.Parent = trayIcon
-
-trayIcon.MouseButton1Click:Connect(function()
-    if isHidden then
-        maximize()
-    end
-end)
-
 local function minimize()
-    if cooldown then return end
-    
-    if isHidden then
-        script.Parent.Main.Contents.Visible = true
-        script.Parent.Main.TopbarZone.Visible = true
-        script.Parent.Visible = true
-        script.Parent.Main.Overlay.BackgroundTransparency = 1
-        script.Parent.UIAspectRatioConstraint.AspectRatio = oldRatio
-        script.Parent.Size = oldSize
-        isHidden = false
-        isMinimized = false
-        return
-    end
-    
+    if cooldown or isMinimized then return end
+
+    isMinimized = true
     cooldown = true
-    
+
     tweenService:Create(script.Parent.Main.Overlay, TweenInfo.new(0.5), {BackgroundTransparency = 0}):Play()
-    
     task.wait(0.5)
 
     script.Parent.Main.Contents.Visible = false
     script.Parent.Main.TopbarZone.Visible = false
-    
+
     tweenService:Create(script.Parent.UIAspectRatioConstraint, TweenInfo.new(1, Enum.EasingStyle.Exponential, Enum.EasingDirection.Out), {AspectRatio = 1}):Play()
     script.Parent:TweenSize(UDim2.fromScale(0.01, 0.01), Enum.EasingDirection.In, Enum.EasingStyle.Sine, 1, true)
-    
     task.wait(1)
-    
+
     script.Parent.Visible = false
-    isHidden = true
+
+    -- Mostrar burbuja solo en móvil/táctil
+    if uis.TouchEnabled then
+        createBubble()
+    end
+
     isMinimized = true
-    trayIcon.Visible = true
     cooldown = false
+end
+
+-- === BURBUJA DE MINIMIZADO (MÓVIL) ===
+local bubbleButton = nil
+
+local function createBubble()
+    if bubbleButton then return end
+    local parent = script:FindFirstAncestorOfClass("ScreenGui") or game:GetService("CoreGui")
+    local bubble = Instance.new("TextButton")
+    bubble.Name = "KetamineBubble"
+    bubble.Size = UDim2.fromOffset(58, 58)
+    bubble.Position = UDim2.new(0.85, 0, 0.72, 0)
+    bubble.AnchorPoint = Vector2.new(0.5, 0.5)
+    bubble.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+    bubble.BorderSizePixel = 0
+    bubble.Text = "K"
+    bubble.TextColor3 = Color3.fromRGB(190, 140, 255)
+    bubble.TextScaled = true
+    bubble.Font = Enum.Font.GothamBold
+    bubble.ZIndex = 999
+    bubble.Active = true
+    bubble.Selectable = true
+    bubble.Parent = parent
+
+    local corner = Instance.new("UICorner")
+    corner.CornerRadius = UDim.new(1, 0)
+    corner.Parent = bubble
+
+    local stroke = Instance.new("UIStroke")
+    stroke.Color = Color3.fromRGB(165, 105, 255)
+    stroke.Thickness = 2.5
+    stroke.Parent = bubble
+
+    -- Arrastrar burbuja con el dedo
+    local dragging = false
+    local dragStart, startPos
+    bubble.InputBegan:Connect(function(input)
+        if input.UserInputType == Enum.UserInputType.MouseButton1
+        or input.UserInputType == Enum.UserInputType.Touch then
+            dragging = true
+            dragStart = input.Position
+            startPos = bubble.Position
+        end
+    end)
+    bubble.InputEnded:Connect(function(input)
+        if input.UserInputType == Enum.UserInputType.MouseButton1
+        or input.UserInputType == Enum.UserInputType.Touch then
+            dragging = false
+        end
+    end)
+    game:GetService("UserInputService").InputChanged:Connect(function(input)
+        if dragging and (input.UserInputType == Enum.UserInputType.MouseMovement
+        or input.UserInputType == Enum.UserInputType.Touch) then
+            local delta = input.Position - dragStart
+            bubble.Position = UDim2.new(
+                startPos.X.Scale, startPos.X.Offset + delta.X,
+                startPos.Y.Scale, startPos.Y.Offset + delta.Y
+            )
+        end
+    end)
+
+    -- Tap para maximizar
+    bubble.MouseButton1Click:Connect(function()
+        maximize()
+    end)
+
+    bubbleButton = bubble
+
+    -- Animación de pulso suave
+    task.spawn(function()
+        while bubbleButton == bubble and bubble.Parent do
+            tweenService:Create(bubble, TweenInfo.new(0.9, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut), {
+                Size = UDim2.fromOffset(64, 64)
+            }):Play()
+            task.wait(0.9)
+            if not (bubbleButton == bubble and bubble.Parent) then break end
+            tweenService:Create(bubble, TweenInfo.new(0.9, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut), {
+                Size = UDim2.fromOffset(58, 58)
+            }):Play()
+            task.wait(0.9)
+        end
+    end)
+end
+
+local function destroyBubble()
+    if bubbleButton then
+        bubbleButton:Destroy()
+        bubbleButton = nil
+    end
 end
 
 cons[#cons + 1] = settings.Event:Connect(function(setting, value)
@@ -12848,11 +12910,12 @@ cons[#cons + 1] = settings.Event:Connect(function(setting, value)
 end)
 
 local function maximize()
-    if cooldown or (not isMinimized and not isHidden) then return end
-    
-    isHidden = false
+    if cooldown or not isMinimized then return end
+
     isMinimized = false
     cooldown = true
+    
+    destroyBubble()
     
     script.Parent.Visible = true
     script.Parent.Main.Overlay.Visible = false
@@ -12875,9 +12938,7 @@ local function maximize()
     tweenService:Create(script.Parent.Main.Overlay, TweenInfo.new(2), {BackgroundTransparency = 1}):Play()
 
     isMinimized = false
-    isHidden = false
     cooldown = false
-    trayIcon.Visible = false
 
     for _, v in settings.Values do
         local i = v[1]
@@ -12892,13 +12953,7 @@ end
 local files = getfenv().writefile and getfenv().readfile and getfenv().makefolder
 local http = game:GetService("HttpService")
 
-cons[#cons+1] = script.Parent.Main.TopbarZone.Buttons.Minimize.MouseButton1Click:Connect(function()
-    if isHidden then
-        maximize()
-    else
-        minimize()
-    end
-end)
+cons[#cons+1] = script.Parent.Main.TopbarZone.Buttons.Minimize.MouseButton1Click:Connect(minimize)
 cons[#cons+1] = script.Parent.Main.TopbarZone.Buttons.Close.MouseButton1Click:Connect(function()
     if files then
         local saveFile = { }
@@ -12911,7 +12966,7 @@ cons[#cons+1] = script.Parent.Main.TopbarZone.Buttons.Close.MouseButton1Click:Co
             end
         end
 
-        task.spawn(getfenv().writefile, "Sacyn Spy/Settings.json", http:JSONEncode(saveFile))
+        task.spawn(getfenv().writefile, "Ketamine/Settings.json", http:JSONEncode(saveFile))
     end
     
     shared.OnCloseEvent:Fire()
@@ -12939,7 +12994,7 @@ cons[#cons + 1] = game:GetService("Players").PlayerRemoving:Connect(function(plr
                 end
             end
 
-            task.spawn(getfenv().writefile, "Sacyn Spy/Settings.json", http:JSONEncode(saveFile))
+            task.spawn(getfenv().writefile, "Ketamine/Settings.json", http:JSONEncode(saveFile))
         end
     end
 end)
@@ -12962,8 +13017,6 @@ task.spawn(function()
     repeat task.wait() until game:IsLoaded() and workspace.CurrentCamera and task.wait(1)
 
     script.Parent.Visible = true
-
-    script.Parent.Main.TopbarZone.Buttons.Minimize.Visible = true
 
     maximize()
 end)
