@@ -7533,7 +7533,7 @@ do -- Set properties
     objects["Instance285"]["ClipsDescendants"] = false;
     objects["Instance285"]["TextColor3"] = Color3.new(1, 1, 1);
     objects["Instance285"]["BorderColor3"] = Color3.new(0, 0, 0);
-    objects["Instance7536"]["Text"] = "Copiar texto";
+    objects["Instance285"]["Text"] = "Copiar texto";
     objects["Instance285"]["AutomaticSize"] = Enum.AutomaticSize.None;
     objects["Instance285"]["LayoutOrder"] = 0;
     objects["Instance285"]["Rotation"] = 0;
