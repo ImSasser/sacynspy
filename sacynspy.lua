@@ -12787,34 +12787,6 @@ local oldSize = script.Parent.Size
 local isMinimized = true
 local cooldown = false
 
-local function minimize()
-    if cooldown or isMinimized then return end
-
-    isMinimized = true
-    cooldown = true
-
-    tweenService:Create(script.Parent.Main.Overlay, TweenInfo.new(0.5), {BackgroundTransparency = 0}):Play()
-    task.wait(0.5)
-
-    script.Parent.Main.Contents.Visible = false
-    script.Parent.Main.TopbarZone.Visible = false
-
-    tweenService:Create(script.Parent.UIAspectRatioConstraint, TweenInfo.new(1, Enum.EasingStyle.Exponential, Enum.EasingDirection.Out), {AspectRatio = 1}):Play()
-    script.Parent:TweenSize(UDim2.fromScale(0.01, 0.01), Enum.EasingDirection.In, Enum.EasingStyle.Sine, 1, true)
-    task.wait(1)
-
-    script.Parent.Visible = false
-
-    -- Mostrar burbuja solo en móvil/táctil
-    if uis.TouchEnabled then
-        createBubble()
-    end
-
-    isMinimized = true
-    cooldown = false
-end
-
--- === BURBUJA DE MINIMIZADO (MÓVIL) ===
 local bubbleButton = nil
 
 local function createBubble()
@@ -12860,7 +12832,6 @@ local function createBubble()
     stroke.Thickness = 2.5
     stroke.Parent = bubble
 
-    -- Arrastrar burbuja con el dedo
     local dragging = false
     local dragStart, startPos
     bubble.InputBegan:Connect(function(input)
@@ -12888,14 +12859,12 @@ local function createBubble()
         end
     end)
 
-    -- Tap para maximizar
     bubble.MouseButton1Click:Connect(function()
         maximize()
     end)
 
     bubbleButton = bubble
 
-    -- Animación de pulso suave
     task.spawn(function()
         while bubbleButton == bubble and bubble.Parent do
             tweenService:Create(bubble, TweenInfo.new(0.9, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut), {
@@ -12916,6 +12885,33 @@ local function destroyBubble()
         bubbleButton:Destroy()
         bubbleButton = nil
     end
+end
+
+local function minimize()
+    if cooldown or isMinimized then return end
+
+    isMinimized = true
+    cooldown = true
+
+    tweenService:Create(script.Parent.Main.Overlay, TweenInfo.new(0.5), {BackgroundTransparency = 0}):Play()
+    task.wait(0.5)
+
+    script.Parent.Main.Contents.Visible = false
+    script.Parent.Main.TopbarZone.Visible = false
+
+    tweenService:Create(script.Parent.UIAspectRatioConstraint, TweenInfo.new(1, Enum.EasingStyle.Exponential, Enum.EasingDirection.Out), {AspectRatio = 1}):Play()
+    script.Parent:TweenSize(UDim2.fromScale(0.01, 0.01), Enum.EasingDirection.In, Enum.EasingStyle.Sine, 1, true)
+    task.wait(1)
+
+    script.Parent.Visible = false
+
+    -- Mostrar burbuja solo en móvil/táctil
+    if uis.TouchEnabled then
+        createBubble()
+    end
+
+    isMinimized = true
+    cooldown = false
 end
 
 cons[#cons + 1] = settings.Event:Connect(function(setting, value)
