@@ -5923,7 +5923,7 @@ do -- Set properties
     objects["Instance222"]["ClipsDescendants"] = false;
     objects["Instance222"]["TextColor3"] = Color3.new(1, 1, 1);
     objects["Instance222"]["BorderColor3"] = Color3.new(0, 0, 0);
-    objects["Instance222"]["Text"] = "Copiar texto al portapapeles";
+    objects["Instance222"]["Text"] = "Copiar texto";
     objects["Instance222"]["AutomaticSize"] = Enum.AutomaticSize.None;
     objects["Instance222"]["LayoutOrder"] = 0;
     objects["Instance222"]["Rotation"] = 0;
@@ -6075,7 +6075,7 @@ do -- Set properties
     objects["Instance228"]["ClipsDescendants"] = false;
     objects["Instance228"]["TextColor3"] = Color3.new(1, 1, 1);
     objects["Instance228"]["BorderColor3"] = Color3.new(0, 0, 0);
-    objects["Instance228"]["Text"] = "Copiar ruta al portapapeles";
+    objects["Instance228"]["Text"] = "Copiar ruta";
     objects["Instance228"]["AutomaticSize"] = Enum.AutomaticSize.None;
     objects["Instance228"]["LayoutOrder"] = 0;
     objects["Instance228"]["Rotation"] = 0;
@@ -7533,7 +7533,7 @@ do -- Set properties
     objects["Instance285"]["ClipsDescendants"] = false;
     objects["Instance285"]["TextColor3"] = Color3.new(1, 1, 1);
     objects["Instance285"]["BorderColor3"] = Color3.new(0, 0, 0);
-    objects["Instance285"]["Text"] = "Copiar texto al portapapeles";
+    objects["Instance285"]["Text"] = "Copiar texto";
     objects["Instance285"]["AutomaticSize"] = Enum.AutomaticSize.None;
     objects["Instance285"]["LayoutOrder"] = 0;
     objects["Instance285"]["Rotation"] = 0;
@@ -8266,25 +8266,25 @@ return function(shared, page)
     end
     
     local clipboard = shared.Clipboard
-    addButton("Copiar código al portapapeles", function()
+    addButton("Copiar código", function()
         clipboard(codeBox.Text)
     end)
-    addButton("Copiar ruta al portapapeles", function()
+    addButton("Copiar ruta", function()
         if selection[1] then
             clipboard(shared.ToString.ToString(selection[1]))
         end
     end)
-    addButton("Copiar args al portapapeles", function()
+    addButton("Copiar args", function()
         if selection[1] then
             clipboard(shared.ToString.ToString(selection[2]))
         end
     end)
-    addButton("Copiar resultado al portapapeles", function()
+    addButton("Copiar resultado", function()
         if selection[3] and selection[3][1] then
             clipboard(shared.ToString.ToString(selection[3][1]))
         end
     end)
-    addButton("Copiar llamador al portapapeles", function()
+    addButton("Copiar llamador", function()
         if selection[4] then
             clipboard(shared.ToString.ToString(selection[4]))
         end
@@ -12097,25 +12097,25 @@ return function(shared, page)
     end
     
     local clipboard = shared.Clipboard
-    addButton("Copiar código al portapapeles", function()
+    addButton("Copiar código", function()
         clipboard(codeBox.Text)
     end)
-    addButton("Copiar ruta al portapapeles", function()
+    addButton("Copiar ruta", function()
         if selection[1] then
             clipboard(shared.ToString.ToString(selection[1]))
         end
     end)
-    addButton("Copiar args al portapapeles", function()
+    addButton("Copiar args", function()
         if selection[1] then
             clipboard(shared.ToString.ToString(selection[3]))
         end
     end)
-    addButton("Copiar resultado al portapapeles", function()
+    addButton("Copiar resultado", function()
         if selection[4] and selection[4][1] then
             clipboard(shared.ToString.ToString(selection[4][1]))
         end
     end)
-    addButton("Copiar llamador al portapapeles", function()
+    addButton("Copiar llamador", function()
         if selection[5] then
             clipboard(shared.ToString.ToString(selection[5]))
         end
