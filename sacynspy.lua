@@ -1,8 +1,3 @@
--- [[ GENERATED WITH InfernoHub/Scriptify STUDIO PLUGIN ]] --
--- Scriptify Version: 1.0
-
---
-
 -- Create objects
 local parent = nil;
 local objects = {
@@ -12938,6 +12933,8 @@ task.spawn(function()
     repeat task.wait() until game:IsLoaded() and workspace.CurrentCamera and task.wait(1)
 
     script.Parent.Visible = true
+
+    script.Parent.Main.TopbarZone.Buttons.Minimize.Visible = true
 
     maximize()
 end)
