@@ -1065,7 +1065,7 @@ do -- Set properties
     objects["Instance41"]["BackgroundColor3"] = Color3.new(1, 1, 1);
     objects["Instance41"]["TextColor3"] = Color3.new(1, 1, 1);
     objects["Instance41"]["BorderColor3"] = Color3.new(0, 0, 0);
-    objects["Instance41"]["Text"] = "UI Settings";
+    objects["Instance41"]["Text"] = "Ajustes de Interfaz";
     objects["Instance41"]["LayoutOrder"] = 0;
     objects["Instance41"]["TextWrapped"] = true;
     objects["Instance41"]["Rotation"] = 0;
@@ -1253,7 +1253,7 @@ do -- Set properties
     objects["Instance48"]["BackgroundColor3"] = Color3.new(1, 1, 1);
     objects["Instance48"]["TextColor3"] = Color3.new(1, 1, 1);
     objects["Instance48"]["BorderColor3"] = Color3.new(0, 0, 0);
-    objects["Instance48"]["Text"] = "Memory scan";
+    objects["Instance48"]["Text"] = "Escaneo de memoria";
     objects["Instance48"]["LayoutOrder"] = 0;
     objects["Instance48"]["TextWrapped"] = true;
     objects["Instance48"]["Rotation"] = 0;
@@ -1402,7 +1402,7 @@ do -- Set properties
     objects["Instance53"]["BackgroundColor3"] = Color3.new(1, 1, 1);
     objects["Instance53"]["TextColor3"] = Color3.new(1, 1, 1);
     objects["Instance53"]["BorderColor3"] = Color3.new(0, 0, 0);
-    objects["Instance53"]["Text"] = "Script scan";
+    objects["Instance53"]["Text"] = "Escaneo de scripts";
     objects["Instance53"]["LayoutOrder"] = 0;
     objects["Instance53"]["TextWrapped"] = true;
     objects["Instance53"]["Rotation"] = 0;
@@ -1512,7 +1512,7 @@ do -- Set properties
     objects["Instance56"]["BackgroundColor3"] = Color3.new(1, 1, 1);
     objects["Instance56"]["TextColor3"] = Color3.new(1, 1, 1);
     objects["Instance56"]["BorderColor3"] = Color3.new(0, 0, 0);
-    objects["Instance56"]["Text"] = "Remotes";
+    objects["Instance56"]["Text"] = "Remotos";
     objects["Instance56"]["LayoutOrder"] = 0;
     objects["Instance56"]["TextWrapped"] = true;
     objects["Instance56"]["Rotation"] = 0;
@@ -1700,7 +1700,7 @@ do -- Set properties
     objects["Instance63"]["BackgroundColor3"] = Color3.new(1, 1, 1);
     objects["Instance63"]["TextColor3"] = Color3.new(1, 1, 1);
     objects["Instance63"]["BorderColor3"] = Color3.new(0, 0, 0);
-    objects["Instance63"]["Text"] = "Home";
+    objects["Instance63"]["Text"] = "Inicio";
     objects["Instance63"]["LayoutOrder"] = 0;
     objects["Instance63"]["TextWrapped"] = true;
     objects["Instance63"]["Rotation"] = 0;
@@ -1849,7 +1849,7 @@ do -- Set properties
     objects["Instance68"]["BackgroundColor3"] = Color3.new(1, 1, 1);
     objects["Instance68"]["TextColor3"] = Color3.new(1, 1, 1);
     objects["Instance68"]["BorderColor3"] = Color3.new(0, 0, 0);
-    objects["Instance68"]["Text"] = "HTTP reqs";
+    objects["Instance68"]["Text"] = "Peticiones HTTP";
     objects["Instance68"]["LayoutOrder"] = 0;
     objects["Instance68"]["TextWrapped"] = true;
     objects["Instance68"]["Rotation"] = 0;
@@ -1959,7 +1959,7 @@ do -- Set properties
     objects["Instance71"]["BackgroundColor3"] = Color3.new(1, 1, 1);
     objects["Instance71"]["TextColor3"] = Color3.new(1, 1, 1);
     objects["Instance71"]["BorderColor3"] = Color3.new(0, 0, 0);
-    objects["Instance71"]["Text"] = "Events";
+    objects["Instance71"]["Text"] = "Eventos";
     objects["Instance71"]["LayoutOrder"] = 0;
     objects["Instance71"]["TextWrapped"] = true;
     objects["Instance71"]["Rotation"] = 0;
@@ -2063,7 +2063,7 @@ do -- Set properties
     objects["Instance75"]["BackgroundColor3"] = Color3.new(1, 1, 1);
     objects["Instance75"]["TextColor3"] = Color3.new(0.588235, 0.588235, 0.588235);
     objects["Instance75"]["BorderColor3"] = Color3.new(0, 0, 0);
-    objects["Instance75"]["Text"] = "Scanners";
+    objects["Instance75"]["Text"] = "Escaneos";
     objects["Instance75"]["LayoutOrder"] = 0;
     objects["Instance75"]["TextWrapped"] = true;
     objects["Instance75"]["Rotation"] = 0;
@@ -2176,7 +2176,7 @@ do -- Set properties
     objects["Instance79"]["BackgroundColor3"] = Color3.new(1, 1, 1);
     objects["Instance79"]["TextColor3"] = Color3.new(0.588235, 0.588235, 0.588235);
     objects["Instance79"]["BorderColor3"] = Color3.new(0, 0, 0);
-    objects["Instance79"]["Text"] = "Spy";
+    objects["Instance79"]["Text"] = "Espia";
     objects["Instance79"]["LayoutOrder"] = 0;
     objects["Instance79"]["TextWrapped"] = true;
     objects["Instance79"]["Rotation"] = 0;
@@ -2324,7 +2324,7 @@ do -- Set properties
     objects["Instance85"]["BackgroundColor3"] = Color3.new(1, 1, 1);
     objects["Instance85"]["TextColor3"] = Color3.new(1, 1, 1);
     objects["Instance85"]["BorderColor3"] = Color3.new(0, 0, 0);
-    objects["Instance85"]["Text"] = "PAGE VIEW";
+    objects["Instance85"]["Text"] = "VISTA DE PAGINA";
     objects["Instance85"]["LayoutOrder"] = 0;
     objects["Instance85"]["TextWrapped"] = true;
     objects["Instance85"]["Rotation"] = 0;
@@ -2365,7 +2365,7 @@ do -- Set properties
     objects["Instance86"]["BackgroundColor3"] = Color3.new(1, 1, 1);
     objects["Instance86"]["TextColor3"] = Color3.new(1, 1, 1);
     objects["Instance86"]["BorderColor3"] = Color3.new(0, 0, 0);
-    objects["Instance86"]["Text"] = "Contents will be added soon";
+    objects["Instance86"]["Text"] = "El contenido se agregara pronto";
     objects["Instance86"]["LayoutOrder"] = 0;
     objects["Instance86"]["TextWrapped"] = true;
     objects["Instance86"]["Rotation"] = 0;
@@ -2538,7 +2538,7 @@ do -- Set properties
     objects["Instance92"]["BackgroundColor3"] = Color3.new(1, 1, 1);
     objects["Instance92"]["TextColor3"] = Color3.new(1, 1, 1);
     objects["Instance92"]["BorderColor3"] = Color3.new(0, 0, 0);
-    objects["Instance92"]["Text"] = "Outcoming";
+    objects["Instance92"]["Text"] = "Salientes";
     objects["Instance92"]["LayoutOrder"] = 0;
     objects["Instance92"]["TextWrapped"] = true;
     objects["Instance92"]["Rotation"] = 0;
@@ -2663,7 +2663,7 @@ do -- Set properties
     objects["Instance96"]["BackgroundColor3"] = Color3.new(1, 1, 1);
     objects["Instance96"]["TextColor3"] = Color3.new(1, 1, 1);
     objects["Instance96"]["BorderColor3"] = Color3.new(0, 0, 0);
-    objects["Instance96"]["Text"] = "Incoming";
+    objects["Instance96"]["Text"] = "Entrantes";
     objects["Instance96"]["LayoutOrder"] = 0;
     objects["Instance96"]["TextWrapped"] = true;
     objects["Instance96"]["Rotation"] = 0;
@@ -3500,7 +3500,7 @@ do -- Set properties
     objects["Instance127"]["BackgroundColor3"] = Color3.new(1, 1, 1);
     objects["Instance127"]["TextColor3"] = Color3.new(1, 1, 1);
     objects["Instance127"]["BorderColor3"] = Color3.new(0, 0, 0);
-    objects["Instance127"]["Text"] = "Button";
+    objects["Instance127"]["Text"] = "Boton";
     objects["Instance127"]["LayoutOrder"] = 0;
     objects["Instance127"]["TextWrapped"] = true;
     objects["Instance127"]["Rotation"] = 0;
@@ -4190,7 +4190,7 @@ do -- Set properties
     objects["Instance159"]["BackgroundColor3"] = Color3.new(1, 1, 1);
     objects["Instance159"]["TextColor3"] = Color3.new(1, 1, 1);
     objects["Instance159"]["BorderColor3"] = Color3.new(0, 0, 0);
-    objects["Instance159"]["Text"] = "CHANGELOGS";
+    objects["Instance159"]["Text"] = "REGISTROS DE CAMBIOS";
     objects["Instance159"]["LayoutOrder"] = 0;
     objects["Instance159"]["TextWrapped"] = true;
     objects["Instance159"]["Rotation"] = 0;
@@ -4516,7 +4516,7 @@ do -- Set properties
     objects["Instance171"]["BackgroundColor3"] = Color3.new(1, 1, 1);
     objects["Instance171"]["TextColor3"] = Color3.new(1, 1, 1);
     objects["Instance171"]["BorderColor3"] = Color3.new(0, 0, 0);
-    objects["Instance171"]["Text"] = "Button";
+    objects["Instance171"]["Text"] = "Boton";
     objects["Instance171"]["LayoutOrder"] = 0;
     objects["Instance171"]["TextWrapped"] = true;
     objects["Instance171"]["Rotation"] = 0;
@@ -4942,7 +4942,7 @@ do -- Set properties
     objects["Instance186"]["BackgroundColor3"] = Color3.new(1, 1, 1);
     objects["Instance186"]["TextColor3"] = Color3.new(0.784314, 0.784314, 0.784314);
     objects["Instance186"]["BorderColor3"] = Color3.new(0, 0, 0);
-    objects["Instance186"]["Text"] = "THIS TOOL IS UNAVAILABLE IN YOUR EXECUTOR";
+    objects["Instance186"]["Text"] = "ESTA HERRAMIENTA NO ESTA DISPONIBLE EN TU EJECUTOR";
     objects["Instance186"]["LayoutOrder"] = 0;
     objects["Instance186"]["TextWrapped"] = true;
     objects["Instance186"]["Rotation"] = 0;
@@ -5491,7 +5491,7 @@ do -- Set properties
     objects["Instance206"]["BackgroundColor3"] = Color3.new(1, 1, 1);
     objects["Instance206"]["TextColor3"] = Color3.new(1, 1, 1);
     objects["Instance206"]["BorderColor3"] = Color3.new(0, 0, 0);
-    objects["Instance206"]["Text"] = "Button";
+    objects["Instance206"]["Text"] = "Boton";
     objects["Instance206"]["LayoutOrder"] = 0;
     objects["Instance206"]["TextWrapped"] = true;
     objects["Instance206"]["Rotation"] = 0;
@@ -5854,7 +5854,7 @@ do -- Set properties
     objects["Instance220"]["ShowNativeInput"] = true;
     objects["Instance220"]["TextColor3"] = Color3.new(1, 1, 1);
     objects["Instance220"]["BorderColor3"] = Color3.new(0, 0, 0);
-    objects["Instance220"]["Text"] = "cod editor zon :)))";
+    objects["Instance220"]["Text"] = "Zona de editor de codigo";
     objects["Instance220"]["TextSize"] = 14;
     objects["Instance220"]["Visible"] = true;
     objects["Instance220"]["Rotation"] = 0;
@@ -5923,7 +5923,7 @@ do -- Set properties
     objects["Instance222"]["ClipsDescendants"] = false;
     objects["Instance222"]["TextColor3"] = Color3.new(1, 1, 1);
     objects["Instance222"]["BorderColor3"] = Color3.new(0, 0, 0);
-    objects["Instance222"]["Text"] = "Copy text to clipboard";
+    objects["Instance222"]["Text"] = "Copiar texto";
     objects["Instance222"]["AutomaticSize"] = Enum.AutomaticSize.None;
     objects["Instance222"]["LayoutOrder"] = 0;
     objects["Instance222"]["Rotation"] = 0;
@@ -5999,7 +5999,7 @@ do -- Set properties
     objects["Instance225"]["ClipsDescendants"] = false;
     objects["Instance225"]["TextColor3"] = Color3.new(1, 1, 1);
     objects["Instance225"]["BorderColor3"] = Color3.new(0, 0, 0);
-    objects["Instance225"]["Text"] = "< Back";
+    objects["Instance225"]["Text"] = "< Volver";
     objects["Instance225"]["AutomaticSize"] = Enum.AutomaticSize.None;
     objects["Instance225"]["LayoutOrder"] = 0;
     objects["Instance225"]["Rotation"] = 0;
@@ -6075,7 +6075,7 @@ do -- Set properties
     objects["Instance228"]["ClipsDescendants"] = false;
     objects["Instance228"]["TextColor3"] = Color3.new(1, 1, 1);
     objects["Instance228"]["BorderColor3"] = Color3.new(0, 0, 0);
-    objects["Instance228"]["Text"] = "Copy path to clipboard";
+    objects["Instance228"]["Text"] = "Copiar ruta";
     objects["Instance228"]["AutomaticSize"] = Enum.AutomaticSize.None;
     objects["Instance228"]["LayoutOrder"] = 0;
     objects["Instance228"]["Rotation"] = 0;
@@ -6151,7 +6151,7 @@ do -- Set properties
     objects["Instance231"]["ClipsDescendants"] = false;
     objects["Instance231"]["TextColor3"] = Color3.new(1, 1, 1);
     objects["Instance231"]["BorderColor3"] = Color3.new(0, 0, 0);
-    objects["Instance231"]["Text"] = "Enchant code";
+    objects["Instance231"]["Text"] = "Ofuscar codigo";
     objects["Instance231"]["AutomaticSize"] = Enum.AutomaticSize.None;
     objects["Instance231"]["LayoutOrder"] = 0;
     objects["Instance231"]["Rotation"] = 0;
@@ -6223,7 +6223,7 @@ do -- Set properties
     objects["Instance234"]["BackgroundColor3"] = Color3.new(1, 1, 1);
     objects["Instance234"]["TextColor3"] = Color3.new(0.392157, 0.392157, 0.392157);
     objects["Instance234"]["BorderColor3"] = Color3.new(0, 0, 0);
-    objects["Instance234"]["Text"] = "Matches";
+    objects["Instance234"]["Text"] = "Coincidencias";
     objects["Instance234"]["LayoutOrder"] = 0;
     objects["Instance234"]["TextWrapped"] = true;
     objects["Instance234"]["Rotation"] = 0;
@@ -6557,7 +6557,7 @@ do -- Set properties
     objects["Instance246"]["BackgroundColor3"] = Color3.new(1, 1, 1);
     objects["Instance246"]["TextColor3"] = Color3.new(0.392157, 0.392157, 0.392157);
     objects["Instance246"]["BorderColor3"] = Color3.new(0, 0, 0);
-    objects["Instance246"]["Text"] = "Script name";
+    objects["Instance246"]["Text"] = "Nombre del script";
     objects["Instance246"]["LayoutOrder"] = 0;
     objects["Instance246"]["TextWrapped"] = true;
     objects["Instance246"]["Rotation"] = 0;
@@ -6717,7 +6717,7 @@ do -- Set properties
     objects["Instance254"]["BackgroundColor3"] = Color3.new(1, 1, 1);
     objects["Instance254"]["TextColor3"] = Color3.new(1, 1, 1);
     objects["Instance254"]["BorderColor3"] = Color3.new(0, 0, 0);
-    objects["Instance254"]["Text"] = "The tool is loading...";
+    objects["Instance254"]["Text"] = "La herramienta esta cargando...";
     objects["Instance254"]["LayoutOrder"] = 0;
     objects["Instance254"]["TextWrapped"] = true;
     objects["Instance254"]["Rotation"] = 0;
@@ -6786,7 +6786,7 @@ do -- Set properties
     objects["Instance256"]["ClipsDescendants"] = true;
     objects["Instance256"]["TextColor3"] = Color3.new(1, 1, 1);
     objects["Instance256"]["BorderColor3"] = Color3.new(0, 0, 0);
-    objects["Instance256"]["Text"] = "Start Scanning";
+    objects["Instance256"]["Text"] = "Iniciar Escaneo";
     objects["Instance256"]["AutomaticSize"] = Enum.AutomaticSize.None;
     objects["Instance256"]["LayoutOrder"] = 0;
     objects["Instance256"]["Rotation"] = 0;
@@ -7113,7 +7113,7 @@ do -- Set properties
     objects["Instance271"]["BackgroundColor3"] = Color3.new(1, 1, 1);
     objects["Instance271"]["TextColor3"] = Color3.new(0.392157, 0.392157, 0.392157);
     objects["Instance271"]["BorderColor3"] = Color3.new(0, 0, 0);
-    objects["Instance271"]["Text"] = "Matches";
+    objects["Instance271"]["Text"] = "Coincidencias";
     objects["Instance271"]["LayoutOrder"] = 0;
     objects["Instance271"]["TextWrapped"] = true;
     objects["Instance271"]["Rotation"] = 0;
@@ -7367,7 +7367,7 @@ do -- Set properties
     objects["Instance280"]["BackgroundColor3"] = Color3.new(1, 1, 1);
     objects["Instance280"]["TextColor3"] = Color3.new(0.392157, 0.392157, 0.392157);
     objects["Instance280"]["BorderColor3"] = Color3.new(0, 0, 0);
-    objects["Instance280"]["Text"] = "Address / name";
+    objects["Instance280"]["Text"] = "Direccion / nombre";
     objects["Instance280"]["LayoutOrder"] = 0;
     objects["Instance280"]["TextWrapped"] = true;
     objects["Instance280"]["Rotation"] = 0;
@@ -7464,7 +7464,7 @@ do -- Set properties
     objects["Instance283"]["ShowNativeInput"] = true;
     objects["Instance283"]["TextColor3"] = Color3.new(1, 1, 1);
     objects["Instance283"]["BorderColor3"] = Color3.new(0, 0, 0);
-    objects["Instance283"]["Text"] = "cod editor zon :)))";
+    objects["Instance283"]["Text"] = "Zona de editor de codigo";
     objects["Instance283"]["TextSize"] = 14;
     objects["Instance283"]["Visible"] = true;
     objects["Instance283"]["Rotation"] = 0;
@@ -7533,7 +7533,7 @@ do -- Set properties
     objects["Instance285"]["ClipsDescendants"] = false;
     objects["Instance285"]["TextColor3"] = Color3.new(1, 1, 1);
     objects["Instance285"]["BorderColor3"] = Color3.new(0, 0, 0);
-    objects["Instance285"]["Text"] = "Copy text to clipboard";
+    objects["Instance7536"]["Text"] = "Copiar texto";
     objects["Instance285"]["AutomaticSize"] = Enum.AutomaticSize.None;
     objects["Instance285"]["LayoutOrder"] = 0;
     objects["Instance285"]["Rotation"] = 0;
@@ -7609,7 +7609,7 @@ do -- Set properties
     objects["Instance288"]["ClipsDescendants"] = false;
     objects["Instance288"]["TextColor3"] = Color3.new(1, 1, 1);
     objects["Instance288"]["BorderColor3"] = Color3.new(0, 0, 0);
-    objects["Instance288"]["Text"] = "< Back";
+    objects["Instance288"]["Text"] = "< Volver";
     objects["Instance288"]["AutomaticSize"] = Enum.AutomaticSize.None;
     objects["Instance288"]["LayoutOrder"] = 0;
     objects["Instance288"]["Rotation"] = 0;
@@ -7685,7 +7685,7 @@ do -- Set properties
     objects["Instance291"]["ClipsDescendants"] = false;
     objects["Instance291"]["TextColor3"] = Color3.new(1, 1, 1);
     objects["Instance291"]["BorderColor3"] = Color3.new(0, 0, 0);
-    objects["Instance291"]["Text"] = "Generate search code";
+    objects["Instance291"]["Text"] = "Generar codigo de busqueda";
     objects["Instance291"]["AutomaticSize"] = Enum.AutomaticSize.None;
     objects["Instance291"]["LayoutOrder"] = 0;
     objects["Instance291"]["Rotation"] = 0;
@@ -7761,7 +7761,7 @@ do -- Set properties
     objects["Instance294"]["ClipsDescendants"] = false;
     objects["Instance294"]["TextColor3"] = Color3.new(1, 1, 1);
     objects["Instance294"]["BorderColor3"] = Color3.new(0, 0, 0);
-    objects["Instance294"]["Text"] = "Get parent";
+    objects["Instance294"]["Text"] = "Obtener padre";
     objects["Instance294"]["AutomaticSize"] = Enum.AutomaticSize.None;
     objects["Instance294"]["LayoutOrder"] = 0;
     objects["Instance294"]["Rotation"] = 0;
@@ -7833,7 +7833,7 @@ do -- Set properties
     objects["Instance297"]["BackgroundColor3"] = Color3.new(1, 1, 1);
     objects["Instance297"]["TextColor3"] = Color3.new(0.784314, 0.784314, 0.784314);
     objects["Instance297"]["BorderColor3"] = Color3.new(0, 0, 0);
-    objects["Instance297"]["Text"] = "THIS TOOL IS UNAVAILABLE IN YOUR EXECUTOR";
+    objects["Instance297"]["Text"] = "ESTA HERRAMIENTA NO ESTA DISPONIBLE EN TU EJECUTOR";
     objects["Instance297"]["LayoutOrder"] = 0;
     objects["Instance297"]["TextWrapped"] = true;
     objects["Instance297"]["Rotation"] = 0;
@@ -7939,10 +7939,7 @@ local modules do
     modules[objects["Instance8"]] = function()
         local script = objects["Instance8"];
 return {
-    { "1.0", "Sacyn Spy was released as CSpy (Cherry's Spy), having simple settings, remote & event spy." },
-    { "1.1", "CSpy been renamed to Sacyn Spy, added Script scanner & http spy." },
-    { "1.2", "Fixed lags who been caused by Script scanner & improved it's speed, added ability to hook arguments in remote & event spies." },
-    { "1.3", "Added changelogs, fixed http spy error (not fatal) on bad executors, added memory scanner. <b>Now unavailable pages such as memory scanner not visible on unsupported executors.</b>" }
+    { "v1.0", "Hello! There is nothing to see here yet, stay tuned for updates." }
 }
     end;
 
@@ -9178,7 +9175,7 @@ local function pressKey(isDown, key)
 end
 
 local shared = {
-    Version = "BETA",
+    Version = "v1.0",
     Connections = { },
     SidePanelEvent = Instance.new("BindableEvent", script),
     Settings = require(script.Parent.Settings),
@@ -12810,7 +12807,7 @@ local function createBubble()
     bubble.AnchorPoint = Vector2.new(0.5, 0.5)
     bubble.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
     bubble.BorderSizePixel = 0
-    bubble.Text = "K"
+    bubble.Text = "S"
     bubble.TextColor3 = Color3.fromRGB(190, 140, 255)
     bubble.TextScaled = true
     bubble.Font = Enum.Font.GothamBold
