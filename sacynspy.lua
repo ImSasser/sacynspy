@@ -9366,7 +9366,20 @@ return function(shared, page)
                 local obj = page:FindFirstChild(typeof(v)):Clone()
                 obj.Parent = page
                 obj.Name = i
-                obj.Label.Text = i:gsub("_", " ")
+                local translations = {
+                    Auto_load_settings = "Cargar ajustes automáticamente",
+                    Transparent = "Transparente",
+                    Rounded_corners = "Esquinas redondeadas",
+                    Window_scale = "Escala de ventana",
+                    Has_shadow = "Tener sombra",
+                    Shadow_centered = "Sombra centrada",
+                    Create_arguments_as_variable = "Crear argumentos como variable",
+                    Create_event_as_variable = "Crear evento como variable",
+                    Maximum_log_amount = "Cantidad máxima de registros",
+                    Decompile_limit = "Límite de descompilación",
+                    Ignore_spammy_logs = "Ignorar registros spam"
+                }
+                obj.Label.Text = translations[i] or i:gsub("_", " ")
                 obj.Visible = true
                 
                 if prevSeparator then
@@ -12807,7 +12820,7 @@ local function createBubble()
     bubble.AnchorPoint = Vector2.new(0.5, 0.5)
     bubble.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
     bubble.BorderSizePixel = 0
-    bubble.Text = "K"
+    bubble.Text = "S"
     bubble.TextColor3 = Color3.fromRGB(190, 140, 255)
     bubble.TextScaled = true
     bubble.Font = Enum.Font.GothamBold
