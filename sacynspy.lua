@@ -12778,6 +12778,33 @@ local isMinimized = false
 local isHidden = true
 local cooldown = false
 
+local trayIcon = Instance.new("ImageButton")
+trayIcon.Size = UDim2.fromOffset(40, 40)
+trayIcon.Position = UDim2.new(0, 10, 0, 10)
+trayIcon.AnchorPoint = Vector2.new(0, 0)
+trayIcon.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+trayIcon.BorderSizePixel = 0
+trayIcon.Image = "rbxassetid://116368608257813"
+trayIcon.ImageColor3 = Color3.fromRGB(255, 255, 255)
+trayIcon.Visible = false
+trayIcon.ZIndex = 999999999
+trayIcon.Parent = script.Parent
+
+local trayCorner = Instance.new("UICorner")
+trayCorner.CornerRadius = UDim.new(1, 8)
+trayCorner.Parent = trayIcon
+
+local trayStroke = Instance.new("UIStroke")
+trayStroke.Color = Color3.fromRGB(60, 60, 60)
+trayStroke.Thickness = 1
+trayStroke.Parent = trayIcon
+
+trayIcon.MouseButton1Click:Connect(function()
+    if isHidden then
+        maximize()
+    end
+end)
+
 local function minimize()
     if cooldown then return end
     
@@ -12810,6 +12837,7 @@ local function minimize()
     script.Parent.Visible = false
     isHidden = true
     isMinimized = true
+    trayIcon.Visible = true
     cooldown = false
 end
 
@@ -12849,6 +12877,7 @@ local function maximize()
     isMinimized = false
     isHidden = false
     cooldown = false
+    trayIcon.Visible = false
 
     for _, v in settings.Values do
         local i = v[1]
