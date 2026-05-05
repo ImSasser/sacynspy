@@ -4304,7 +4304,7 @@ do -- Set properties
     objects["Instance163"]["BackgroundColor3"] = Color3.new(1, 1, 1);
     objects["Instance163"]["TextColor3"] = Color3.new(1, 1, 1);
     objects["Instance163"]["BorderColor3"] = Color3.new(0, 0, 0);
-    objects["Instance163"]["Text"] = "<b>UPDATE 1.3 --</b> Added changelogs & memory scanner";
+    objects["Instance163"]["Text"] = "<b>UPDATE 1.0 --</b> Hola! Bienvenido a Sacyn Spy.";
     objects["Instance163"]["LayoutOrder"] = 0;
     objects["Instance163"]["TextWrapped"] = true;
     objects["Instance163"]["Rotation"] = 0;
@@ -5749,7 +5749,7 @@ do -- Set properties
     objects["Instance217"]["TextDirection"] = Enum.TextDirection.Auto;
     objects["Instance217"]["CursorPosition"] = 1;
     objects["Instance217"]["ClipsDescendants"] = false;
-    objects["Instance217"]["PlaceholderText"] = "Type here keywords to find in game scripts. \";\" to separate keywords";
+    objects["Instance217"]["PlaceholderText"] = "Escribe aquí palabras clave para buscar en scripts del juego. \";\" para separar palabras clave";
     objects["Instance217"]["AutomaticSize"] = Enum.AutomaticSize.None;
     objects["Instance217"]["Size"] = UDim2.new(999, 0, 1, 0);
     objects["Instance217"]["TextStrokeColor3"] = Color3.new(0, 0, 0);
@@ -7016,7 +7016,7 @@ do -- Set properties
     objects["Instance268"]["TextDirection"] = Enum.TextDirection.Auto;
     objects["Instance268"]["CursorPosition"] = 1;
     objects["Instance268"]["ClipsDescendants"] = false;
-    objects["Instance268"]["PlaceholderText"] = "Address (0x1234567890) or string to search";
+    objects["Instance268"]["PlaceholderText"] = "Dirección (0x1234567890) o cadena a buscar";
     objects["Instance268"]["AutomaticSize"] = Enum.AutomaticSize.None;
     objects["Instance268"]["Size"] = UDim2.new(999, 0, 1, 0);
     objects["Instance268"]["TextStrokeColor3"] = Color3.new(0, 0, 0);
@@ -7274,7 +7274,7 @@ do -- Set properties
     objects["Instance277"]["BackgroundColor3"] = Color3.new(1, 1, 1);
     objects["Instance277"]["TextColor3"] = Color3.new(1, 1, 1);
     objects["Instance277"]["BorderColor3"] = Color3.new(0, 0, 0);
-    objects["Instance277"]["Text"] = "table: 0x1234567890";
+    objects["Instance277"]["Text"] = "tabla: 0x1234567890";
     objects["Instance277"]["LayoutOrder"] = 0;
     objects["Instance277"]["TextWrapped"] = true;
     objects["Instance277"]["Rotation"] = 0;
@@ -7939,10 +7939,7 @@ local modules do
     modules[objects["Instance8"]] = function()
         local script = objects["Instance8"];
 return {
-    { "1.0", "Sacyn Spy was released as CSpy (Cherry's Spy), having simple settings, remote & event spy." },
-    { "1.1", "CSpy been renamed to Sacyn Spy, added Script scanner & http spy." },
-    { "1.2", "Fixed lags who been caused by Script scanner & improved it's speed, added ability to hook arguments in remote & event spies." },
-    { "1.3", "Added changelogs, fixed http spy error (not fatal) on bad executors, added memory scanner. <b>Now unavailable pages such as memory scanner not visible on unsupported executors.</b>" }
+    { "1.0", "Hola! Bienvenido a Sacyn Spy. Aún no hay nada que ver aquí, pronto habrá más." },
 }
     end;
 
@@ -7955,7 +7952,7 @@ return function(shared, page)
     local settings = shared.Settings
     
     local codeBox = shared.CodeBox(page.TextBox, shared.UseEnv)
-    codeBox.Text = "Welcome to Sacyn Spy - Event Spy!\n-- Waiting for Bindables --"
+    codeBox.Text = "Bienvenido a Sacyn Spy - Espía de Eventos!\n-- Esperando Bindables --"
 
     local logExample = page.Logs.Log
     logExample.Parent = page
@@ -8347,7 +8344,7 @@ return function(shared, page)
             hooking[2] = selection[1]
             hooking[3] = codeBox.Text
 
-            button.Contents.Label.Text = "HOOK"
+            button.Contents.Label.Text = "ENLAZAR"
             codeBox.Text = "return " .. shared.ToString.ToString(selection[2], -1)
         elseif hooking[1] then
             button.Contents.Label.Text = button.Name
@@ -8380,7 +8377,7 @@ return function(shared, page)
             hooking[2] = selection[1]
             hooking[3] = codeBox.Text
             
-            button.Contents.Label.Text = "HOOK"
+            button.Contents.Label.Text = "ENLAZAR"
             codeBox.Text = "return " .. shared.ToString.ToString(selection[2], -1)
         elseif hooking[1] then
             button.Contents.Label.Text = button.Name
@@ -8997,20 +8994,20 @@ event.Name = "SettingChange"
 local metatable
 
 local settings = {
-    {"SEPARATOR", "UI Settings"},
+    {"SEPARATOR", "Ajustes de UI"},
     {"Transparent", false, function(state)
         tweenService:Create(script.Parent.Parent.Main, TweenInfo.new(1), {BackgroundTransparency = not state and 0 or metatable.Has_shadow and 0.2 or 0.05}):Play()
     end},
     {"Rounded_corners", false, function(state)
         tweenService:Create(script.Parent.Parent.Main.UICorner, TweenInfo.new(1), {CornerRadius = UDim.new(state and 0.025 or 0.01)}):Play()
     end},
-    {"Always_show_side_panel", {1, 1, 3}, function(state, instance)
+{"Always_show_side_panel", {1, 1, 3}, function(state, instance)
         if instance then
-            instance.Label.Text = state == 1 and "Dynamic side panel" or state == 2 and "Never show side panel" or "Always show side panel"
+            instance.Label.Text = state == 1 and "Panel lateral dinámico" or state == 2 and "Nunca mostrar panel lateral" or "Siempre mostrar panel lateral"
         end
     end},
     {"Window_scale", {100, 75, 155}},
-    {"SEPARATOR", "UI Shadow Settings"},
+    {"SEPARATOR", "Ajustes de sombra de UI"},
     {"Has_shadow", true, function(state)
         metatable.Transparent = metatable.Transparent
         tweenService:Create(script.Parent.Parent.Shadow, TweenInfo.new(state and 0.75 or 1.25), {ImageTransparency = state and 0.2 or 1}):Play()
@@ -9018,22 +9015,22 @@ local settings = {
     {"Shadow_centered", false, function(state)
         script.Parent.Parent.Shadow:TweenPosition(state and UDim2.fromScale(0.5, 0.5) or UDim2.fromScale(0.515, 0.525), Enum.EasingDirection.Out, Enum.EasingStyle.Quad, 0.5, true)
     end},
-    {"SEPARATOR", "Log Settings"},
+    {"SEPARATOR", "Ajustes de registro"},
     {"Log_executor_function_calls", {1, 1, 3}, function(state, instance)
         if instance then
-            instance.Label.Text = state == 1 and "Log calls called only by game scripts" or state == 2 and "Log calls called by game & executor scripts" or "Log calls called only by executor scripts"
+            instance.Label.Text = state == 1 and "Registrar llamadas solo de scripts del juego" or state == 2 and "Registrar llamadas del juego y executor" or "Registrar llamadas solo del executor"
         end
     end},
     {"Create_arguments_as_variable", false},
     {"Create_event_as_variable", false},
     {"Maximum_log_amount", {10, 0, 20}, function(state, instance)
         if instance then
-            instance.Label.Text = "Maximum log amount [ " .. math.max(1, state * 5) .. " ]"
+            instance.Label.Text = "Cantidad máxima de registros [ " .. math.max(1, state * 5) .. " ]"
         end
     end},
     {"Decompile_limit", {1, 1, 50}, function(state, instance)
         if instance then
-            instance.Label.Text = "Decompile limit [ " .. state .. " / 50 scripts at the same time ]"
+            instance.Label.Text = "Límite de descompilación [ " .. state .. " / 50 scripts al mismo tiempo ]"
         end
     end},
     {"Ignore_spammy_logs", true}
@@ -9126,7 +9123,7 @@ if files then
         end
     end})
     
-    table.insert(settings, 1, {"SEPARATOR", "Saves"})
+    table.insert(settings, 1, {"SEPARATOR", "Guardados"})
     
     local success, value = pcall(getfenv().readfile, "Sacyn Spy/Settings.bool")
     if success then
@@ -11501,7 +11498,7 @@ return function(shared, page)
     local limit = 4
 
     local codeBox = shared.CodeBox(page.Contents.TextBox, shared.UseEnv)
-    codeBox.Text = "Welcome to Sacyn Spy - HTTP Spy!\n-- Waiting for HTTP requests --"
+    codeBox.Text = "Bienvenido a Sacyn Spy - Espía de HTTP!\n-- Esperando solicitudes HTTP --"
 
     local function addLog(realUrl, method, func, headers, body, result)
         realUrl = realUrl:gsub("\\", "/")
@@ -11705,7 +11702,7 @@ return function(shared, page)
     local settings = shared.Settings
     
     local codeBox = shared.CodeBox(page.Contents.To.TextBox, shared.UseEnv)
-    codeBox.Text = "Welcome to Sacyn Spy - Remote Spy!\n-- Waiting for Remotes --"
+    codeBox.Text = "Bienvenido a Sacyn Spy - Espía Remoto!\n-- Esperando Remotos --"
 
     local logExample = page.Contents.To.Logs.Log
     logExample.Parent = page
@@ -11718,7 +11715,7 @@ return function(shared, page)
         and type(getfenv().getnamecallmethod) == "function"
     
     if not hooksAvailable then
-        codeBox.Text = "Welcome to CSpy - Remote Spy!\n-- Waiting for Remotes --\n\n--[[\n    Why Outcoming mode is unavailable?\n\n    -- -- -- -- --\n\n    Your executor is missing one or more of these functions:\n    hookmetamethod, hookfunction, getnamecallmethod\n]]--"
+        codeBox.Text = "Bienvenido a CSpy - Espía Remoto!\n-- Esperando Remotos --\n\n--[[\n    ¿Por qué el modo Saliente no está disponible?\n\n    -- -- -- -- --\n\n    Tu executor carece de una o más de estas funciones:\n    hookmetamethod, hookfunction, getnamecallmethod\n]]--"
     end
 
     local ptype = hooksAvailable -- true
@@ -12058,7 +12055,7 @@ return function(shared, page)
             end)
         end)
     else
-        page.Buttons.To.Label.Text = "Outcoming [Unavailable]"
+        page.Buttons.To.Label.Text = "Saliente [No disponible]"
     end
     
     local button = page.Contents.Buttons.Button
@@ -12178,7 +12175,7 @@ return function(shared, page)
             hooking[2] = selection[1]
             hooking[3] = codeBox.Text
 
-            button.Contents.Label.Text = "HOOK"
+            button.Contents.Label.Text = "ENLAZAR"
             codeBox.Text = "return " .. shared.ToString.ToString(selection[3], -1)
         elseif hooking[1] then
             button.Contents.Label.Text = button.Name
@@ -12211,7 +12208,7 @@ return function(shared, page)
             hooking[2] = selection[1]
             hooking[3] = codeBox.Text
             
-            button.Contents.Label.Text = "HOOK"
+            button.Contents.Label.Text = "ENLAZAR"
             codeBox.Text = "return " .. shared.ToString.ToString(selection[3], -1)
         elseif hooking[1] then
             button.Contents.Label.Text = button.Name
@@ -12603,7 +12600,7 @@ local shared = require(script.Shared)
 local settings = shared.Settings
 local cons = shared.Connections
 
-script.Parent.Main.TopbarZone.Title.Text ..= " | v" .. shared.Changelogs[#shared.Changelogs][1]
+script.Parent.Main.TopbarZone.Title.Text ..= " | v1.0"
 
 local tweens = { }
 local tweenService = game:GetService("TweenService")
